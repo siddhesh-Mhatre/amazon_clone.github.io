@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <style media="screen">
+
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+
+        <!-- FOR DESKTOP -->
+
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="logo flex" id="res-lo">
+                    <a href=""><img src="img/logo.png" class="Logo-png" alt="">
+
+                    </a>
+                    <p>&nbsp;&nbsp; hello<br><i class="fa fa-location-arrow fa-1x"></i>&nbspselect your address</p>
+                </div>
+
+                <div class="nav-list">
+                    <ul class="nav-links">
+
+                        <li class="flex2" style="
+                        display: flex;">
+                            <select name="category" id="category">
+                                <option value="none" selected disabled hidden>ALL</option>
+                              <option value="saab">Saab</option>
+                              <option value="opel">Opel</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search  fa-2x"></i></button>
+
+                        </li>
+                        <li class="language" style="padding:0;">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li class="dropdown-item" style="display: flex;">
+                                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132503/iflag.jpg" width="20" height="15">
+                                    <select name="cars" id="cars" style="width: 20px; "> 
+                                        <option value="none" selected disabled hidden></option>
+                                      <option value="saab">Saab</option>
+                                      <option value="opel">Opel</option>
+                                      <option value="audi">Audi</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li class="dropdown-item" style="display: flex; padding: 0;">
+                                    <p>
+                                        <h5>hello,SignIn <span style="font-weight: 900;"> Acoount and Lits</span>
+                                        </h5>
+
+                                    </p>
+                                    <select name="cars" id="cars" style="width: 20px; "> 
+                                        <option value="none" selected disabled hidden></option>
+                                      <option value="saab">Saab</option>
+                                      <option value="opel">Opel</option>
+                                      <option value="audi">Audi</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                <h5>Returns </h5><span style="font-weight: 900;"><h4 style="margin: 0;">&orders</h4> </span>
+
+
+                            </p>
+                        </li>
+                        <li>
+                            <div class="cart flex3">
+                                <img src="img/cart.png" alt="" class="cart-logo">
+                                <p>cart</p>
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+            </nav>
+
+            <div class="second-nav">
+                <div class="second-nav-content">
+                    <div id="sidebar">
+                        <div class="toggle-btn" onclick="show()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="category-navbar">
+                            <div class="singIn">
+                                <i class="fa fa-user-circle  fa-2x"></i>
+                                <p>hello,Sing In</p>
+                            </div>
+
+
+
+                            <ul>
+
+                                <li>
+                                    <p> <b>trending</b> </p>
+                                    <ul class="trending">
+
+                                        <li>Home</li>
+                                        <li>Work</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p> <b>Degital content and Devices</b> </p>
+                                    <ul class="Degital-content">
+
+                                        <li>Home</li>
+                                        <li>Work</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p> <b> shop by Department</b></p>
+                                    <ul class="shop-by-deprtament">
+
+                                        <li>Home</li>
+                                        <li>Work</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <p> <b>Help and setting</b> </p>
+                                    <ul class="help-and-setting">
+
+                                        <li>Home</li>
+                                        <li>Work</li>
+                                        <li>About</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                    <hr>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="second-nav-list">
+                        <ul>
+                            <li>Best Sellers</li>
+                            <li>Mobiles</li>
+                            <li>Fashion</li>
+                            <li>Prime</li>
+                            <li>New Realese</li>
+                            <li>Electronics</li>
+                            <li>Thody's Delas </li>
+                            <li>Customer sevice </li>
+                            <li>Amazon Pay</li>
+
+                        </ul>
+                    </div>
+                    <div class="app-info">
+                        <img src="img/cart.png" alt="" class="cart-logo">
+                        <p>shoping made easy | Download the app</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container crousel-img">
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true}'>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/crouse-1.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/crouse-2.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/crouse-3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- products -->
+
+        <div class="container products">
+            <!-- <div class="con"> -->
+            <div class="card">
+                <div class="card1">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p1.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p2.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p3.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+
+                <div class="card3">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p5.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+
+                <div class="card3">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p7.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+
+                <div class="card3">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p8.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card3">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p1.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card3">
+                    <div class="all-containes">
+                        <h1>Degital thrmpmter</h1>
+                        <img src="img/p1.jpg" alt="" class="product-img">
+                        <a href="">ReadMore</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- </div> -->
+
+        </div>
+
+
+        <div class="container covid-19">
+            <h2>Amazon Response to covid</h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true, "groupCells": 5, "pageDots": false}'>
+
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r1.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r2.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r3.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r4.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r5.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r6.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r8.jpg">
+                </div>
+
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r8.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r8.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r8.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/r8.jpg">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container Deals">
+            <h2>Recomended Deals for you</h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": false, "imagesLoaded":true, "groupCells": 5, "pageDots": false}'>
+
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l1.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l2.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l3.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l4.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l5.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l6.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l7.jpg">
+                </div>
+
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l8.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l9.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l10.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="img/l8.jpg">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container sponsored">
+            <div class="homefurneshing">
+                <img src="img/banner.jpg" alt="" srcset="">
+            </div>
+        </div>
+        <footer class="container">
+            <div class="sectors">
+                <div class="sector1">
+                    <div class="div1 rev">
+                        <a href="">Back to top</a>
+                    </div>
+                    <div class="div2 all-links">
+                        <ul class="links">
+                            <li class="l1">
+                                <p>Get to Know us</p>
+                                <ul>
+                                    <li>About Us</li>
+                                    <li>Careers</li>
+                                    <li>Press Releases</li>
+                                    <li>Amazon Cares</li>
+                                    <li>Gift a Smile</li>
+                                </ul>
+                            </li>
+                            <li class="l1">
+                                <p>Connect with Us </p>
+                                <ul>
+                                    <li>Facebook</li>
+                                    <li>Twitter</li>
+                                    <li>Instagram</li>
+
+                                </ul>
+                            </li>
+                            <li class="l1">
+                                <p>Make Money with Us</p>
+                                <ul>
+                                    <li>Sell on Amazon</li>
+                                    <li>Sell under Amazon Accelerator</li>
+                                    <li>Amazon Global Selling</li>
+                                    <li>Become an Affiliate</li>
+                                    <li>Fulfilment by Amazon</li>
+                                    <li>Advertise Your Products</li>
+                                    <li>Amazon Pay on Merchants</li>
+                                </ul>
+                            </li>
+                            <li class="l1">
+                                <p>Let Us Help You </p>
+                                <ul>
+                                    <li>COVID-19 and Amazon</li>
+                                    <li>Your Account</li>
+                                    <li>Returns Centre</li>
+                                    <li>100% Purchase Protection</li>
+                                    <li>Amazon App Download</li>
+                                    <li>Amazon Assistant Download</li>
+                                    <li>Help</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- <hr> -->
+                    </div>
+
+
+                </div>
+
+                <div class="sector2">
+                    <hr>
+                    <div class="div1 country-lang-list">
+                        <div class="lang-selector">
+                            <div class="img">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <div class="dropdown">
+
+                                <button onclick="myFunction()" class="dropbtn">English</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#about">About</a>
+                                    <a href="#base">Base</a>
+                                    <a href="#blog">Blog</a>
+                                    <a href="#contact">Contact</a>
+                                    <a href="#custom">Custom</a>
+                                    <a href="#support">Support</a>
+                                    <a href="#tools">Tools</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div2  languagesList">
+                        <div class="LANG">
+                            <ul>
+                                <li>Austrilia</li>
+                                <li>brazil</li>
+                                <li>canada</li>
+                                <li>china</li>
+                                <li>france</li>
+                                <li>germany</li>
+                                <li>itly</li>
+                                <li>japan</li>
+                                <li>mexico</li>
+                                <li>Netherland</li>
+                                <li>Poland</li>
+                                <li>singapur</li>
+                                <li>spain</li>
+                                <li>Turkey</li>
+                                <li>United </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sector3">
+                    <div class="links-other">
+                        <ul class="UL_A">
+                            <li class="li_A li_1">
+                                <ul>
+                                    <li><b>AbeBooks</b></li>
+                                    <li>Books,arts</li>
+                                    <li>&collection</li>
+
+                                </ul>
+                                <ul class="UL_AB">
+                                    <li><b>Shopbop</b></li>
+                                    <li>Designer</li>
+                                    <li>Fashion Brands</li>
+                                </ul>
+
+                            </li>
+                            <li class="li_A li_2">
+                                <ul>
+                                    <li><b>Amazon Web service</b></li>
+                                    <li>Scalable Cloud</li>
+                                    <li>Computing Services</li>
+
+                                </ul>
+                                <ul class="UL_AB">
+                                    <li><b>Amazon Business</b></li>
+                                    <li>Everything For</li>
+                                    <li>Your Business</li>
+                                </ul>
+                            </li>
+                            <li class="li_A li_3">
+                                <ul>
+                                    <li><b>Audible</b></li>
+                                    <li>Download</li>
+                                    <li>Audio Books</li>
+
+                                </ul>
+                                <ul class="UL_AB">
+                                    <li><b>Prime Now</b></li>
+                                    <li>2-Hours Delviery</li>
+                                    <li>on Everyday itmes</li>
+                                </ul>
+                            </li>
+                            <li class="li_A li_4">
+                                <ul>
+                                    <li><b>DPReview</b></li>
+                                    <li>Digital</li>
+                                    <li>Photography</li>
+
+                                </ul>
+                                <ul class="UL_AB">
+                                    <li><b>Amazon Prime Music</b></li>
+                                    <li>70 million song,ad-free</li>
+                                    <li>Over 9 million prodcast episodes</li>
+                                </ul>
+                            </li>
+                            <li class="li_A li_5">
+                                <ul>
+                                    <li><b>IMDb</b></li>
+                                    <li>Movies,TV</li>
+                                    <li>& Celebrities</li>
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="cpyRight">
+                        <span>Conditions of Use & SalePrivacy NoticeInterest-Based Ads© 1996-2021, Amazon.com, Inc. or its affiliates</span>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+    <script type="text/javascript">
+        var elem = document.querySelector('#res-lo');
+
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
